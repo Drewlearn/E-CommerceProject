@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+body{
+    background-color:#5C8374 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    background-color: #5C8374;
+    padding: 5px;
+    border-radius: 5px;
+    color: #F3F3E0;
+    margin-bottom: 5px;
+    font-size: 23px;
+}
+
+.formContainer{
+    background-color:#F3F3E0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    width: 50%;  
+    padding: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid #5C8374; */
+    align-items: center;
+    padding: 8px;
+}
+.information label{
+    display: inline;
+    font-size: 20px;
+    color: #5C8374;
+    font-weight: bold;
+}
+
+.information  input{
+    width: 100%;
+    display: inline;
+    font-size: 15px;
+    padding:5px;
+}
+
+.paymentOption{
+    margin: 10px;
+    border: 3px solid #5C8374;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.myh2{
+    margin: 7px;
+    font-size: 20px;
+    color: #5C8374;
+}
+
+.paymentOption label{
+    font-size: 20px;
+    color: #5C8374;
+    font-weight: 800;
+}
+
+.submition button{
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #5C8374;
+    color: #F3F3E0;
+    border-radius: 5px;
+    font-weight: 700;
+}
