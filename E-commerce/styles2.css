@@ -81,3 +81,64 @@ form{
     border-radius: 5px;
     font-weight: 700;
 }
+
+/* RESPONSIVENESS */
+
+@media (max-width: 768px) {
+    .formContainer {
+        width: 80%; /* Wider container for smaller screens */
+        padding: 15px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .information label {
+        font-size: 18px;
+    }
+
+    .information input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .paymentOption label {
+        font-size: 16px;
+    }
+
+    .submition button {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+/* Media Query for Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .formContainer {
+        width: 95%; /* Almost full width */
+        padding: 10px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .information label {
+        font-size: 16px;
+    }
+
+    .information input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .paymentOption label {
+        font-size: 14px;
+    }
+
+    .submition button {
+        font-size: 16px;
+        padding: 8px;
+    }
+}

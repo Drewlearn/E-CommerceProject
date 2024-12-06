@@ -166,7 +166,7 @@ body{
     background-color: #F3F3E0;
     border: 2px solid black;
     padding: 10px;
-    width: 20%;
+    width: 50%;
     margin-top: 20px;
     border-radius: 5px;
     text-align: center;
@@ -360,4 +360,101 @@ body{
     border-radius: 5px;
     cursor: pointer;
     padding: 10px;
+}
+
+/* RESPONSIVENESS */
+
+/* Default styles (apply to large screens) */
+/* Already defined in your provided CSS */
+
+/* Media Query for Tablets (Screen width: 768px and below) */
+@media (max-width: 768px) {
+    body {
+        padding: 0 2%; /* Reduce body padding */
+    }
+
+    .header-menu {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px;
+    }
+
+    .search-box input {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .menu-list {
+        gap: 20px; /* Reduce gaps between items */
+    }
+
+    .menu-item {
+        width: 100%; /* Full width for each item */
+    }
+
+    .card-list {
+        gap: 10px; /* Reduce gaps */
+    }
+
+    .card {
+        width: 100%; /* Full width cards */
+    }
+
+    .cart-icon span {
+        right: -10px; /* Adjust position of the cart count bubble */
+        top: -10px;
+    }
+
+    #sidebar {
+        width: 80%; /* Sidebar width for tablets */
+    }
+}
+
+/* Media Query for Mobile (Screen width: 480px and below) */
+@media (max-width: 480px) {
+    body {
+        padding: 0 1rem; /* Minimal padding for smaller devices */
+    }
+
+    .header-menu {
+        gap: 5px; /* Reduce gap further */
+    }
+
+    .burger-icon i {
+        padding: 5px; /* Smaller icons */
+    }
+
+    .menu-item {
+        width: 100%; /* Full width for items */
+    }
+
+    .menu-list {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px; /* Adjust spacing */
+    }
+
+    .card {
+        width: 100%; /* Cards take full width */
+        gap: 5px;
+    }
+
+    .card-title {
+        width: 50%; /* Smaller title button */
+    }
+
+    #sidebar {
+        width: 100%; /* Sidebar occupies full width */
+        right: -100%; /* Off-screen by default */
+    }
+
+    #sidebar.open {
+        right: 0; /* Slide in when open */
+    }
+
+    .checkout-btn {
+        font-size: 14px; /* Smaller text size for buttons */
+    }
+
+    .total-amount {
+        flex-direction: column; /* Stack total and amount details */
+        gap: 10px;
+    }
 }
