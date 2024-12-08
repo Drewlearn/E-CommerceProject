@@ -39,6 +39,11 @@ body{
     flex: 1;
     align-items: center;
     padding: 0 1rem;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center the input and icon vertically */
+    background: #F3F3E0;
+    border-radius: 10px;
+    padding: 0 1rem;
 }
 
 #suggestions{
@@ -46,9 +51,20 @@ body{
 }
 
 .search-box input{
+    /* background: transparent;
+    padding: 10px;
+    width: 80%; */
+
+    flex: 1; /* Make input take the remaining space */
     background: transparent;
     padding: 10px;
-    width: 80%;
+    font-size: 16px;
+}
+
+.search-box i {
+    font-size: 20px; /* Adjust icon size */
+    color: #5C8374;
+    cursor: pointer;
 }
 
 .menu-icons{
@@ -115,6 +131,9 @@ body{
     justify-content: center;
     border-radius: 10px;
     text-align: center;
+    padding: 0 10px; /* Add padding to prevent text from touching edges */
+    word-wrap: break-word; /* Ensure long words break to the next line */
+    
 }
 
 .cover .cover-h1{
@@ -364,9 +383,6 @@ body{
 
 /* RESPONSIVENESS */
 
-/* Default styles (apply to large screens) */
-/* Already defined in your provided CSS */
-
 /* Media Query for Tablets (Screen width: 768px and below) */
 @media (max-width: 768px) {
     body {
@@ -380,6 +396,10 @@ body{
 
     .search-box input {
         width: 100%; /* Full width for smaller screens */
+    }
+    
+    .cover-overlay {
+        font-size: 1.2rem; /* Smaller font size for tablets */
     }
 
     .menu-list {
@@ -406,6 +426,15 @@ body{
     #sidebar {
         width: 80%; /* Sidebar width for tablets */
     }
+
+    .search-box {
+        padding: 0 0.5rem; /* Reduce padding */
+    }
+    .search-box input {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    
 }
 
 /* Media Query for Mobile (Screen width: 480px and below) */
@@ -420,6 +449,10 @@ body{
 
     .burger-icon i {
         padding: 5px; /* Smaller icons */
+    }
+
+    .cover-overlay {
+        font-size: 1rem; /* Smaller font size for mobile screens */
     }
 
     .menu-item {
@@ -456,5 +489,15 @@ body{
     .total-amount {
         flex-direction: column; /* Stack total and amount details */
         gap: 10px;
+    }
+
+    .search-box {
+        flex-direction: row; /* Ensure horizontal alignment */
+    }
+    .search-box input {
+        font-size: 12px;
+    }
+    .search-box i {
+        font-size: 18px; /* Adjust icon size */
     }
 }
