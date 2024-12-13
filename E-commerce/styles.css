@@ -26,11 +26,11 @@ body{
     gap: 20px;
 }
 
-.burger-icon i{
-    padding: 10px;
-    background-color:#F3F3E0 ;
+.logo{
     border-radius: 5px;
     cursor: pointer;
+    width: 100px;
+    border-radius: 100%;
 }
 
 .search-box{
@@ -140,8 +140,31 @@ body{
     font-size: 2.5em;
 }
 /* SECTION HEADING */
-.section-heading{
+
+.heading{
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 40px;
+    align-items: center;
+}
+
+.clickToCart{
     font-size: 20px;
+    text-transform: uppercase;
+    margin:5px;
+    background-color: #F3F3E0;
+    padding: 10px;
+    color: #5C8374;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+.section-heading{
+    font-size: 50px;
     text-transform: uppercase;
     margin:1rem 0 10px 0;
     color: #F3F3E0;
@@ -151,12 +174,14 @@ body{
 
 .menu-list{
     display: flex;
-    gap:80px;
+    gap:50px;
     flex-wrap: wrap;
+    margin-left: 50px;
+    justify-content: center;
 }
 
 .menu-item{
-    width: 250px;
+    width: 400px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -198,11 +223,12 @@ body{
     gap: 10px;
     flex-wrap: wrap;
     margin-bottom: 2rem;
-    margin-top: 20px;
+    margin-top: 200px;
+    justify-content: center;
 }
 
 .card{
-    width: 190px;
+    width: 350px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -381,9 +407,29 @@ body{
     padding: 10px;
 }
 
+/* FOOTER */
+footer{
+    background-color: #1b1b1a;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: #F3F3E0;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+
+footer .footer-section{
+    display: flex;
+    gap: 20px;
+}
+
 /* RESPONSIVENESS */
 
 /* Media Query for Tablets (Screen width: 768px and below) */
+
+
+
 @media (max-width: 768px) {
     body {
         padding: 0 2%; /* Reduce body padding */
@@ -501,3 +547,4 @@ body{
         font-size: 18px; /* Adjust icon size */
     }
 }
+
