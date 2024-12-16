@@ -28,7 +28,6 @@ body{
 
 .logo{
     border-radius: 5px;
-    cursor: pointer;
     width: 100px;
     border-radius: 100%;
 }
@@ -147,7 +146,7 @@ body{
     margin: 5px;
     justify-content: center;
     flex-direction: column;
-    margin-left: 40px;
+    /* margin-left: 40px; */
     align-items: center;
 }
 
@@ -176,7 +175,7 @@ body{
     display: flex;
     gap:50px;
     flex-wrap: wrap;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     justify-content: center;
 }
 
